@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Panel</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="topbar">
+        <h1>Admin Panel</h1>
+        <button class="secondary" onclick="logout()">Logout</button>
+    </div>
+
+    <div class="card">
+        <h2>Create New Exam</h2>
+        <input type="text" id="examTitle" placeholder="Exam Title">
+        <textarea id="examDescription" placeholder="Description" rows="2"></textarea>
+        <input type="number" id="examDuration" placeholder="Duration (minutes)">
+        <button onclick="createExam()">Create Exam</button>
+    </div>
+
+    <div class="card">
+        <h2>Manage Exams</h2>
+        <div id="examList">Loading...</div>
+    </div>
+
+    <div class="card" id="questionFormCard" style="display:none;">
+        <h2>Add Question to: <span id="selectedExamTitle"></span></h2>
+        <textarea id="qText" placeholder="Question text" rows="2"></textarea>
+        <input type="text" id="qOptionA" placeholder="Option A">
+        <input type="text" id="qOptionB" placeholder="Option B">
+        <input type="text" id="qOptionC" placeholder="Option C">
+        <input type="text" id="qOptionD" placeholder="Option D">
+        <select id="qCorrect">
+            <option value="A">Correct: A</option>
+            <option value="B">Correct: B</option>
+            <option value="C">Correct: C</option>
+            <option value="D">Correct: D</option>
+        </select>
+        <button onclick="addQuestion()">Add Question</button>
+
+        <h2 style="margin-top:20px;">Existing Questions</h2>
+        <div id="questionList"></div>
+    </div>
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

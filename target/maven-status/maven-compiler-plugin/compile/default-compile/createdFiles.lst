@@ -1,0 +1,15 @@
+com\exam\onlineexamsystem\dto\SubmitExamRequest.class
+com\exam\onlineexamsystem\repository\UserRepository.class
+com\exam\onlineexamsystem\OnlineExamSystemApplication.class
+com\exam\onlineexamsystem\repository\ExamRepository.class
+com\exam\onlineexamsystem\controller\ExamController.class
+com\exam\onlineexamsystem\controller\SubmissionController.class
+com\exam\onlineexamsystem\repository\QuestionRepository.class
+com\exam\onlineexamsystem\entity\Exam.class
+com\exam\onlineexamsystem\entity\User.class
+com\exam\onlineexamsystem\entity\Question.class
+com\exam\onlineexamsystem\entity\Result.class
+com\exam\onlineexamsystem\controller\AuthController.class
+com\exam\onlineexamsystem\controller\ResultController.class
+com\exam\onlineexamsystem\dto\LoginRequest.class
+com\exam\onlineexamsystem\repository\ResultRepository.class

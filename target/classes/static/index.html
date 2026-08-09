@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Online Examination System - Login</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="card login-box">
+        <h1>Online Examination System</h1>
+        <div id="msg"></div>
+
+        <div id="loginForm">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <p style="margin-top:14px;">No account? <a href="#" onclick="toggleForm()">Register here</a></p>
+        </div>
+
+        <div id="registerForm" style="display:none;">
+            <h2>Register</h2>
+            <input type="text" id="regFullName" placeholder="Full Name">
+            <input type="text" id="regUsername" placeholder="Username">
+            <input type="password" id="regPassword" placeholder="Password">
+            <select id="regRole">
+                <option value="STUDENT">Student</option>
+                <option value="ADMIN">Admin</option>
+            </select>
+            <button onclick="register()">Register</button>
+            <p style="margin-top:14px;">Already have an account? <a href="#" onclick="toggleForm()">Login here</a></p>
+        </div>
+    </div>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>
