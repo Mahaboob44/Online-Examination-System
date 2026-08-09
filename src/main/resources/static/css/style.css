@@ -1,0 +1,105 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+
+body {
+    background: #f4f6f9;
+    color: #222;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+h1, h2 { margin-bottom: 15px; color: #1a2b4a; }
+
+.login-box {
+    max-width: 380px;
+    margin: 80px auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    background: #2b5fd9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover { background: #1e47b0; }
+
+button.secondary { background: #6c757d; }
+button.secondary:hover { background: #565e64; }
+
+button.danger { background: #d9364b; }
+button.danger:hover { background: #b02a3c; }
+
+.error { color: #d9364b; margin-bottom: 10px; }
+.success { color: #1a8a4a; margin-bottom: 10px; }
+
+.exam-list-item, .question-item {
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer {
+    position: sticky;
+    top: 0;
+    background: #1a2b4a;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question-block {
+    border-bottom: 1px solid #eee;
+    padding: 16px 0;
+}
+
+.option-row { margin: 6px 0; }
+.option-row label { font-weight: normal; margin-left: 6px; cursor: pointer; }
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.badge {
+    background: #e8edfb;
+    color: #2b5fd9;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
